@@ -1,0 +1,118 @@
+#+title: HWSETA Development Test
+#+OPTIONS: toc:nil
+#+author: HWSETA
+
+Welcome to the HWSETA Development Test.
+
+Today, you will be creating database models for an imaginary college, and then you will import data contained in an
+XML file into the database once your models are in place.
+* Fork the repository
+
+https://github.com/westaexamer/example_college.git
+
+* Examine the existing model
+
+You'll notice that there are models and registrations called Learner and Person located in
+
+#+begin_src
+school/models.py
+school/admin.py
+#+end_src
+
+These a variety of fields, including a ForeignKey field. More on the Django ORM can be found on the Django documentation site.
+
+You will also notice that there are validations for some of the fields.
+
+To start the site, you will first need to do a migration. This is always necessary when database schema changes have been made (new models or fields for example).
+
+To do this, activate the included Python virtual environment and type:
+
+#+begin_src
+python manage.py makemigrations
+python manage.py migrate
+#+end_src
+
+To create a super user, which you need to log in, type:
+
+#+begin_src
+python manage.py createsuperuser
+#+end_src
+
+You also need to create a Linux environment variable for the Django secret key, since it uses Python's os.environ.get()
+
+Then to start the server:
+
+#+begin_src
+python manage.py runserver
+#+end_src
+
+Now, navigate to http://localhost:8000/
+
+Spend a few minutes getting familiar with the interface.
+
+* Create the following models
+
+Now, you need to create the following models:
+
+** Qualification
+A Qualification is what the Example College offers its students.
+
+A Qualification is made up of the following
+
+*** Title
+*** Level
+*** Description
+*** Unit Standards
+*** Academic Department
+*** Languages of Instruction
+*** Duration
+*** Accreditation Status
+
+** Unit Standards
+A unit standard is like a module. Multiple unit standards make up a Qualification.
+
+A unit standard is made up of the following
+
+*** Title
+*** Description
+
+** Academic Department
+
+The Academic Department is the Department at the Example College under which the Qualification falls.
+
+An Academic Department is made up of the following:
+
+*** Name
+*** Year Established
+*** Head
+
+** Languages of Instruction
+
+The languages of instruction are the languages in which the course can be taught. They are made up of only the following:
+
+*** Name
+
+** Accreditation Status
+
+The accreditation status is the status of the Qualifications. They are only made up of:
+
+*** Status
+
+** Heads
+The Heads of the Academic Departments are the individuals are lead those departments. They are made up of:
+
+*** First Name
+*** Last Name
+*** Phone number
+*** Staff Number
+*** Email address
+*** Qualification
+* Create an importer for the data sheet attached
+
+There is a data sheet in the root folder of the git repository containing information that should fit into the models you have just created. Import it into the database.
+The simplest way to do this will be to write a script that parses the XML and calls ORM methods to insert the individual data pieces into the correct places in the database.
+
+#+begin_src
+learners.xml
+sample_import.py
+#+end_src
