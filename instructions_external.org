@@ -30,6 +30,8 @@ To do this, activate the included Python virtual environment and type:
 #+begin_src
 python manage.py makemigrations
 python manage.py migrate
+python manage.py makemigrations school
+python manage.py migrate school
 #+end_src
 
 To create a super user, which you need to log in, type:
