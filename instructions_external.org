@@ -10,6 +10,10 @@ XML file into the database once your models are in place.
 
 https://github.com/westaexamer/example_college.git
 
+* Set up your development environment
+
+Set up the tools that you will need to tackle this project.
+
 * Examine the existing model
 
 You'll notice that there are models and registrations called Learner and Person located in
@@ -19,7 +23,7 @@ school/models.py
 school/admin.py
 #+end_src
 
-These a variety of fields, including a ForeignKey field. More on the Django ORM can be found on the Django documentation site.
+These contain a variety of fields, including a ForeignKey field. More on the Django ORM can be found on the Django documentation site.
 
 You will also notice that there are validations for some of the fields.
 
