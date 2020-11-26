@@ -42,6 +42,10 @@ python manage.py createsuperuser
 
 You also need to create a Linux environment variable for the Django secret key, since it uses Python's os.environ.get()
 
+#+begin_src
+example_college/settings.py
+#+end_src
+
 Then to start the server:
 
 #+begin_src
