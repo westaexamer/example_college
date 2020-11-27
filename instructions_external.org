@@ -65,6 +65,10 @@ Spend a few minutes getting familiar with the interface.
 
 Now, you need to create the following models:
 
+#+begin_src
+(Note that validations on all models are not compulsory, but please try to at least complete one validation per model).
+#+end_src
+
 ** Qualification
 A Qualification is what the Example College offers its students.
 
