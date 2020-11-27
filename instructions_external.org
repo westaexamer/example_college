@@ -1,5 +1,6 @@
 #+title: HWSETA Development Test
 #+OPTIONS: toc:nil
+#+options: num:nil
 #+author: HWSETA
 
 Welcome to the HWSETA Development Test.
