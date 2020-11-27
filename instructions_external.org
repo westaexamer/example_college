@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 #+options: num:nil
 #+author: HWSETA
-
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/mrlee23/readtheorg/master/css/readtheorg.css" />
 Welcome to the HWSETA Development Test.
 
 Today, you will be creating database models for an imaginary college, and then you will import data contained in an
