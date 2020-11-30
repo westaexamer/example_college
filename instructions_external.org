@@ -129,5 +129,5 @@ The simplest way to do this will be to write a script that parses the XML and ca
 
 #+begin_src
 learners.xml
-sample_import.py
+sample_importer.py
 #+end_src
