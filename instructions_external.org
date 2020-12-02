@@ -7,7 +7,7 @@ Welcome to the HWSETA Development Test.
 
 Today, you will be creating database models for an imaginary college, and then you will import data contained in an
 XML file into the database once your models are in place.
-* Fork the repository
+* Clone the repository
 
 https://github.com/westaexamer/example_college.git
 
